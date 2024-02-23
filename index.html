@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- Dev Icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <title>Projeto ZloTrackBand</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Projeto principal</h1>
+        </div>
+    </header>
+    <main>
+        <div class="bubble-background left"></div>
+        <div class="bubble-background right"></div>
+        <div class="content">
+            <div>
+                <h1>Zlo TrackBand <span>(Em andamento)</span></h1>
+                <div>
+                    <h2>Repositório do projeto:</h2>
+                    <h3> <ion-icon name="logo-github"></ion-icon> Github: <a style="font-weight: normal;" href="https://github.com/WesleySardi/projeto-zloTrackBand">https://github.com/WesleySardi/projeto-zloTrackBand</a></h3>
+                </div>
+                <div>
+                    <h2>O que é?</h2>
+                    <p>
+                        O projeto é um sistema completo para o monitoramento de pessoas que possuem
+                        algum grau de dependência, como crianças ou pessoas com Alzheimer. Ele engloba
+                        uma Pulseira de Identificação Pessoal, um sistema web e um aplicativo.
+
+                    </p>
+                    <div id="div-image">
+                        <img src="imgs/imagemSistema.png" alt="Pulseira">
+                    </div>
+                </div>
+                <div>
+                    <h2>Como foi feito?</h2>
+                    <p>
+                        Durante a construção do projeto, estão sendo aplicadas Metodologias Ágeis para
+                        otimizar e controlar o desenvolvimento. Uma combinação de Scrum e Kanban é
+                        utilizada, com um quadro de tarefas para um período de 2 semanas.
+                        <br><br>
+                        Após cada ciclo, a equipe (composta por 3 pessoas) se reúne para revisar o
+                        progresso, discutir melhorias e definir as próximas tarefas com base nas
+                        necessidades do projeto. Isso garante o controle do desenvolvimento em cada
+                        Sprint.
+                        <br><br>
+                        No Front-end da página web, utiliza-se React.js com JSX e Styled Components para
+                        criar código compacto e organizado. No aplicativo, o desenvolvimento é realizado
+                        com React Native, facilitando a integração no Android e no iOS.
+                        <br><br>
+                        No Back-end, é implementado Java com REST e RESTful, incluindo medidas de
+                        segurança como Rate Limit para proteção contra ataques DDoS, e uma API para
+                        envio de SMS.
+                        <br><br>
+                        Para o armazenamento, foi escolhido o PostgreSQL no Amazon RDS devido à sua
+                        robustez, confiabilidade e escalabilidade, garantindo uma gestão eficiente dos
+                        dados com alto desempenho e segurança.
+                    </p>
+                </div>
+                <div id="margin-bottom">
+                    <h2>Como funciona?</h2>
+                    <p>
+                        O sistema permite que os responsáveis cadastrem informações importantes de
+                        seus dependentes em um aplicativo, que são então transferidas para uma
+                        pulseira via chip NFC quando esta é aproximada do celular com o aplicativo
+                        aberto na página correta. A pulseira é colocada no braço do dependente e, se ele
+                        estiver perdido, alguém pode ler o NFC da pulseira com um celular para acessar
+                        uma página web com os dados do dependente e um número de emergência. Se
+                        não houver acesso à internet, o aplicativo pode ler o NFC.
+                        <br><br>
+                        Ao acessar a página web, o usuário terá acesso apenas ao nome do dependente
+                        e ao telefone do responsável para contato. Caso deseje visualizar informações
+                        mais sensíveis, será necessário que o usuário se identifique, fornecendo detalhes
+                        pessoais como nome e telefone. Após a inserção desses dados em nosso
+                        sistema, um SMS será enviado para o celular registrado, e o usuário só poderá
+                        avançar na página ao inserir o código SMS correto no campo designado. Se o
+                        código for inserido corretamente, a localização do indivíduo será registrada em
+                        nosso sistema, assegurando a segurança do dependente e proporcionando
+                        auxílio aos responsáveis em situações de emergência.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bubble-container">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <!-- IonIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
