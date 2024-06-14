@@ -140,6 +140,10 @@
      padding-bottom: 20vh;
  }
 
+ #margin-between {
+    padding-bottom: 5vh;
+}
+
  /* ANIMAÇÃO DE BOLHAS */
 
  .bubble-background {
