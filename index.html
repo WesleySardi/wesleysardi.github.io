@@ -14,7 +14,7 @@
 <body>
     <header>
         <div>
-            <h1>Projetos</h1>
+            <h1>Meus projetos</h1>
         </div>
     </header>
     <main>
@@ -23,18 +23,37 @@
         <div class="content">
             <div>
                 <div>
-                    <h2>Repositórios dos projetos:</h2>
+                    <h1>Repositórios dos projetos:</h2>
                     <h3> <ion-icon name="logo-github"></ion-icon> Github: <a style="font-weight: normal;"
                             href="https://github.com/WesleySardi/">https://github.com/WesleySardi/</a></h3>
                 </div>
-                <h1>Zlo TrackBand <span>(Em andamento)</span></h1>
+                <h1>Zlo TrackBand</h1>
+                <ul></ul>
+                    <li style="margin-left: 2%;">
+                        <a href="https://github.com/WesleySardi/projeto-conclusao-curso-frontend" target="_blank" style="display: inline-flex; align-items: center;">
+                            Repositório Frontend
+                            <span style="margin-left: 5px;">🔗</span>
+                        </a>
+                    </li>
+                    <li style="margin-left: 2%;">
+                        <a href="https://github.com/WesleySardi/projeto-conclusao-curso-backend" target="_blank" style="display: inline-flex; align-items: center;">
+                            Repositório Backend
+                            <span style="margin-left: 5px;">🔗</span>
+                        </a>
+                    </li>
+                    <li style="margin-left: 2%;">
+                        <a href="https://github.com/WesleySardi/projeto-conclusao-curso-mobile" target="_blank" style="display: inline-flex; align-items: center;">
+                            Repositório Mobile
+                            <span style="margin-left: 5px;">🔗</span>
+                        </a>
+                    </li>
+                </ul>
                 <div>
                     <h2>O que é?</h2>
                     <p>
-                        O projeto é um sistema completo para o monitoramento de pessoas que possuem
+                        &emsp;O projeto é um sistema completo para o monitoramento de pessoas que possuem
                         algum grau de dependência, como crianças ou pessoas com Alzheimer. Ele engloba
                         uma Pulseira de Identificação Pessoal, um sistema web e um aplicativo.
-
                     </p>
                     <div id="div-image">
                         <img src="imgs/imagemSistema.png" alt="Pulseira">
@@ -43,24 +62,22 @@
                 <div>
                     <h2>Como foi feito?</h2>
                     <p>
-                        Durante a construção do projeto, estão sendo aplicadas Metodologias Ágeis para
-                        otimizar e controlar o desenvolvimento. Uma combinação de Scrum e Kanban é
+                        &emsp;Durante a construção do projeto, foram aplicadas Metodologias Ágeis para
+                        otimizar e controlar o desenvolvimento. Uma combinação de Scrum e Kanban foi
                         utilizada, com um quadro de tarefas para um período de 2 semanas.
-                        <br><br>
-                        Após cada ciclo, a equipe (composta por 3 pessoas) se reúne para revisar o
+                        Após cada ciclo, a equipe (composta por 3 pessoas) se reunia para revisar o
                         progresso, discutir melhorias e definir as próximas tarefas com base nas
-                        necessidades do projeto. Isso garante o controle do desenvolvimento em cada
+                        necessidades do projeto. Isso garantiu o controle do desenvolvimento em cada
                         Sprint.
                         <br><br>
-                        No Front-end da página web, utiliza-se React.js com JSX e Styled Components para
-                        criar código compacto e organizado. No aplicativo, o desenvolvimento é realizado
-                        com React Native, facilitando a integração no Android e no iOS.
-                        <br><br>
-                        No Back-end, é implementado Java com REST e RESTful, incluindo medidas de
+                        &emsp;No Front-end da página web, utilizou-se React.js com JSX e Styled Components para
+                        criar código compacto e organizado. No aplicativo, o desenvolvimento foi realizado
+                        com React Native, facilitando a integração no Android.
+                        No Back-end, foi implementado Java com REST e RESTful, incluindo medidas de
                         segurança como Rate Limit para proteção contra ataques DDoS, e uma API para
                         envio de SMS.
                         <br><br>
-                        Para o armazenamento, foi escolhido o PostgreSQL no Amazon RDS devido à sua
+                        &emsp;Para o armazenamento, foi escolhido o PostgreSQL no Amazon RDS devido à sua
                         robustez, confiabilidade e escalabilidade, garantindo uma gestão eficiente dos
                         dados com alto desempenho e segurança.
                     </p>
@@ -68,70 +85,120 @@
                 <div id="margin-between">
                     <h2>Como funciona?</h2>
                     <p>
-                        O sistema permite que os responsáveis cadastrem informações importantes de
-                        seus dependentes em um aplicativo, que são então transferidas para uma
+                        &emsp;O sistema permite que os responsáveis cadastrem informações importantes de
+                        seus dependentes em um aplicativo. Essas informações são então transferidas para uma
                         pulseira via chip NFC quando esta é aproximada do celular com o aplicativo
                         aberto na página correta. A pulseira é colocada no braço do dependente e, se ele
                         estiver perdido, alguém pode ler o NFC da pulseira com um celular para acessar
-                        uma página web com os dados do dependente e um número de emergência. Se
-                        não houver acesso à internet, o aplicativo pode ler o NFC.
-                        <br><br>
-                        Ao acessar a página web, o usuário terá acesso apenas ao nome do dependente
-                        e ao telefone do responsável para contato. Caso deseje visualizar informações
-                        mais sensíveis, será necessário que o usuário se identifique, fornecendo detalhes
-                        pessoais como nome e telefone. Após a inserção desses dados em nosso
-                        sistema, um SMS será enviado para o celular registrado, e o usuário só poderá
-                        avançar na página ao inserir o código SMS correto no campo designado. Se o
-                        código for inserido corretamente, a localização do indivíduo será registrada em
-                        nosso sistema, assegurando a segurança do dependente e proporcionando
+                        uma página web com os dados do dependente e um número de emergência.
+                    </p>
+                    <p>
+                        &emsp;Se não houver acesso à internet, o aplicativo pode ler o NFC. Ao acessar a página web,
+                        o usuário terá acesso apenas ao nome do dependente e ao telefone do responsável
+                        para contato. Caso deseje visualizar informações mais sensíveis, será necessário que
+                        o usuário se identifique, fornecendo detalhes pessoais como nome e telefone.
+                    </p>
+                    <p>
+                        &emsp;Após a inserção desses dados em nosso sistema, um SMS será enviado para o celular
+                        registrado, e o usuário só poderá avançar na página ao inserir o código SMS correto
+                        no campo designado. Se o código for inserido corretamente, a localização do indivíduo
+                        será registrada em nosso sistema, assegurando a segurança do dependente e proporcionando
                         auxílio aos responsáveis em situações de emergência.
                     </p>
                 </div>
-                <h1>Sistema para a empresa Tokyo Componentes Eletrônicos LTDA <span>(Em andamento)</span></h1>
+                <h1>Sistema para a empresa Tokyo Componentes Eletrônicos LTDA</h1>
+                <ul></ul>
+                    <li style="margin-left: 2%;">
+                        <a href="https://github.com/WesleySardi/projeto-TokyoComponentesLTDA" target="_blank" style="display: inline-flex; align-items: center;">
+                            Repositório Frontend
+                            <span style="margin-left: 5px;">🔗</span>
+                        </a>
+                    </li>
+                </ul>
                 <div id="margin-between">
                     <h2>Resumo</h2>
                     <p>
-                        Estou trabalhando como freelancer para a empresa Tokyo Componentes Eletrônicos LTDA, criando o
-                        novo sistema front-end e back-end deles. O projeto engloba uma página institucional, um blog e
+                        &emsp;Trabalhei como freelancer para a empresa Tokyo Componentes Eletrônicos LTDA, desenvolvendo o
+                        novo sistema front-end e back-end deles. O projeto incluiu uma página institucional, um blog e
                         um controle de estoque, todos seguindo as melhores práticas de programação, tanto no client-side
                         quanto no server-side.
                         <br><br>
-                        Relacionado à parte front-end, está sendo aplicada a tecnologia React.js, utilizando
-                        componentização com Styled Components para criar um código limpo, compacto e conciso. A página
-                        também está sendo construída para ser responsiva na maior quantidade de dispositivos possível,
-                        tanto móveis quanto desktops.
+                        &emsp;Na parte front-end, utilizei a tecnologia React.js, aplicando componentização com Styled Components
+                        para criar um código limpo, compacto e conciso. A página foi construída para ser responsiva em uma
+                        ampla variedade de dispositivos, tanto móveis quanto desktops.
                         <br><br>
-                        A parte back-end será implementada com a linguagem de programação Java, guiada por orientação a
-                        objetos e seguindo o padrão REST e RESTful. Relacionado à segurança, será implementado o Spring
-                        Security com token JWT para criar um ambiente seguro que evite qualquer tipo de fraude. Além
-                        disso, serão aplicados testes para garantir a eficácia do sistema.
+                        &emsp;A parte back-end foi implementada com a linguagem de programação Java, orientada a objetos e seguindo
+                        o padrão REST e RESTful. Para segurança, implementei o Spring Security com token JWT, criando um
+                        ambiente seguro e confiável. Além disso, realizei testes para garantir a eficácia do sistema.
                         <br><br>
-                        Para armazenamento em banco de dados, foi optado pela utilização da AWS com Postgres, garantindo
-                        confiabilidade e responsividade.
+                        &emsp;Para armazenamento em banco de dados, utilizei a AWS com Postgres, garantindo confiabilidade e
+                        responsividade.
                         <br><br>
-                        Todo o processo está sendo feito com a ajuda das metodologias Kanban e Scrum, utilizando o Jira.
-                        Estas foram escolhidas para aprimorar o rendimento durante o processo, criando sprints para
-                        manter uma constância de entrega de qualidade no produto.
+                        &emsp;Todo o processo foi conduzido com as metodologias Kanban e Scrum, utilizando o Jira. Estas metodologias
+                        foram essenciais para aprimorar o rendimento durante o desenvolvimento, criando sprints que garantiram
+                        uma entrega constante e de qualidade no produto final.
                     </p>
                 </div>
                 <h1>Controle de estoque utilizando NetBeans</h1>
-                <div id="margin-bottom">
+                <ul></ul>
+                    <li style="margin-left: 2%;">
+                        <a href="https://github.com/WesleySardi/controleDeEstoque-NetBeans" target="_blank" style="display: inline-flex; align-items: center;">
+                            Repositório do projeto
+                            <span style="margin-left: 5px;">🔗</span>
+                        </a>
+                    </li>
+                </ul>
+                <div>
                     <h2>Resumo</h2>
                     <p>
-                        O projeto consiste em um sistema de controle de estoque. Utilizei o NetBeans para criar a
+                        &emsp;O projeto consiste em um sistema de controle de estoque. Utilizei o NetBeans para criar a
                         interface gráfica e Java para estruturar o back-end, com armazenamento de dados no PostgreSQL.
                         <br><br>
-                        O objetivo principal deste projeto foi otimizar o desempenho do sistema, buscando torná-lo mais
+                        &emsp;O objetivo principal deste projeto foi otimizar o desempenho do sistema, buscando torná-lo mais
                         leve e eficiente para operar em máquinas menos potentes. Para isso, optei por não incluir as
                         tecnologias de Spring Security e Token JWT para segurança, evitando processamentos
                         desnecessários.
                         <br><br>
-                        O sistema foi desenvolvido para proporcionar uma experiência prática ao usuário, permitindo
+                        &emsp;O sistema foi desenvolvido para proporcionar uma experiência prática ao usuário, permitindo
                         registrar as entradas e saídas dos produtos do estoque de forma simplificada, substituindo
                         métodos tradicionais como caneta e papel. Além disso, oferece a possibilidade de gerar
                         relatórios detalhados sobre o estoque, facilitando o acompanhamento e a análise das atividades
                         relacionadas à gestão de inventário.
 
+                    </p>
+                </div>
+                <h1>NYC Restaurant Explorer</h1>
+                <ul></ul>
+                    <li style="margin-left: 2%;">
+                        <a href="https://github.com/WesleySardi/NYCRestaurantExplorer-Frontend" target="_blank" style="display: inline-flex; align-items: center;">
+                            Repositório Frontend
+                            <span style="margin-left: 5px;">🔗</span>
+                        </a>
+                    </li>
+                    <li style="margin-left: 2%;">
+                        <a href="https://github.com/WesleySardi/NYCRestaurantExplorer-Backend" target="_blank" style="display: inline-flex; align-items: center;">
+                            Repositório Backend
+                            <span style="margin-left: 5px;">🔗</span>
+                        </a>
+                    </li>
+                </ul>
+                <div id="margin-bottom">
+                    <h2>Resumo</h2>
+                    <p>
+                        &emsp;O NYC Restaurant Explorer é um projeto completo de gerenciamento de restaurantes e inspeções na
+                        cidade de Nova York, integrando frontend e backend para proporcionar uma experiência eficiente
+                        aos usuários.
+                        <br><br>
+                        <strong>🖥️ Frontend:</strong> Desenvolvido com Remix.run e a biblioteca de componentes Shadcn/UI,
+                        o frontend oferece uma interface intuitiva e dinâmica. Os usuários podem visualizar a lista de
+                        restaurantes, cadastrar novos estabelecimentos, editar informações e acessar detalhes sobre cada
+                        restaurante, incluindo seu histórico de inspeções.
+                        <br><br>
+                        <strong>⚙️ Backend:</strong> A API backend, construída com Java e PostgreSQL, segue o padrão
+                        RESTful e fornece endpoints para gerenciar restaurantes e suas inspeções. Os usuários podem
+                        buscar, criar, atualizar e remover registros, além de acessar dados detalhados sobre inspeções,
+                        como a quantidade e a data da última vistoria. A API também permite consultas filtradas por
+                        critérios como tipo de culinária, nota da inspeção e localização.
                     </p>
                 </div>
             </div>
