@@ -6,7 +6,7 @@
  }
 
  body {
-     background-color: rgb(219, 239, 255);
+     background-color: rgb(216, 216, 216);
  }
 
  /* HEADER */
@@ -96,6 +96,7 @@
 
  main div div div p {
      padding: 1vw;
+     text-align: justify;
  }
 
  main div div div h3 {
